@@ -35,6 +35,10 @@ import ClickCounter from './renderProps/ClickCounter';
 import HoverCounter from './renderProps/HoverCounter';
 import Candidate from './renderProps/Candidate';
 import EventCounter from './renderProps/EventCounter';
+import CompA from './context/CompA';
+import {UserProvider} from './context/userContext';
+import PostLists from './http/PostLists';
+import PostForm from './http/PostForm';
 
 function App() {
   return (
@@ -112,8 +116,8 @@ function App() {
       {/* END :Fragments */}
 
       {/* START :Pure Component */}
-      {/* <h3>PureComponent performs shallow comparison of props and state of component before calling pureComp in regular time interval ,PureComp will not call if no change in state  from with present and previous</h3>
-      <ParentComp/> */}
+      {/* <h3>PureComponent performs shallow comparison of props and state of component before calling pureComp in regular time interval ,PureComp will not call if no change in state  from with present and previous</h3> */}
+      {/* <ParentComp/> */}
       {/* END :Pure Component */}
 
       {/* START :Memo */}
@@ -122,13 +126,13 @@ function App() {
       {/* END :Memo */}
 
       {/* START :Refs */}
-      {/* <h3>Refs provide a way to access DOM nodes or React elements created in the render method.</h3> */}
-      {/* <RefsDemo/> */}
+      {/* <h3>Refs provide a way to access DOM nodes or React elements created in the render method.</h3>
+      <RefsDemo/> */}
       {/* END :Refs */}
 
       {/* START :Refs with ClassComponent */}
-      {/* <h3>Aim is to focus child input element from ParentComponent</h3> */}
-      {/* <FocusInputFromParent/> */}
+      {/* <h3>Aim is to focus child input element from ParentComponent</h3>
+      <FocusInputFromParent/> */}
       {/* END :Refs with ClassComponent */}
 
       {/* START :Forwarding Refs from Parent to child */}
@@ -165,13 +169,28 @@ function App() {
       {/* <Candidate name={(isLoggedIn)=>isLoggedIn?'karu:4':'Guest'}/> */}
       {/* Method:5 */}
       {/* <Candidate render={(isLoggedIn)=>isLoggedIn?'karu:5':'Guest:5'}/> */}
-      {/* <EventCounter render={(countFromEventCounter,incrementCountFromEventCounter)=>(
+      <EventCounter render={(countFromEventCounter,incrementCountFromEventCounter)=>(
         <ClickCounter counter={countFromEventCounter} incrementCounter={incrementCountFromEventCounter}/>
       )}/>
       <EventCounter render={(countFromEventCounter,incrementCountFromEventCounter)=>(
         <HoverCounter counter={countFromEventCounter} incrementCounter={incrementCountFromEventCounter}/>
-      )}/> */}
+      )}/>
       {/* END : Render Props */}
+
+       {/* START : Context */}
+       {/* There are three steps to making use of context
+       Step-1:Create  the context 
+       Step-2:Provide a context value 
+       Step-3:consume context value
+       <UserProvider value="Karu">
+       <CompA/>
+       </UserProvider> */}
+      {/* END :  Context */}
+
+      {/* START : HTTP get/post */}
+      {/* <PostLists/> */}
+      {/* <PostForm/> */}
+      {/* END : HTTP */}
 
     </div>
   );

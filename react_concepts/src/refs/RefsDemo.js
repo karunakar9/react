@@ -8,6 +8,7 @@ class RefsDemo extends Component {
     }
     //focus will takes place at refresh time if we do uncomment out the below code snippet
     componentDidMount() {
+        console.log("componentDidMount")
         this.inputRef.current.focus()
         console.log(this)
     }
@@ -17,6 +18,7 @@ class RefsDemo extends Component {
         alert(this.inputRef.current.value)
     }
     render() {
+        console.log("render")
         return (
             <div>
                 <input type='text' ref={this.inputRef}></input>

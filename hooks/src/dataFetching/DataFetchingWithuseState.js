@@ -1,0 +1,30 @@
+import axios from 'axios'
+import React,{useState,useEffect} from 'react'
+
+function DataFetchingWithuseState() {
+    const[loading ,setLoading]=useState(true)
+    const [post, setPost] = useState({})
+    const [error, setError] = useState('')
+    useEffect(() => {
+        axios.get('https://jsonplaceholder.typicode.com/posts/1')
+        .then(response=>{
+            console.log(response.data)
+            setLoading(false)
+            setPost(response.data)
+            setError('')
+        })
+        .catch(error=>{
+            setLoading(false)
+            setError('Something went Wrong!')
+        })
+
+    }, [])
+    return (
+        <div>
+            {loading?'loading':post.title}
+            {error?error:null}
+        </div>
+    )     
+}
+
+export default DataFetchingWithuseState
