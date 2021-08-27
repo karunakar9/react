@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { connect } from 'react-redux'
 import { buyCake } from '../redux'
-
+//input value example
 function NewCakeContainer(props) {
     const [number, setNumber] = useState(0)
     console.log("NewCakeContainer:",props)
@@ -23,7 +23,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     console.log("dispatch in NewCakeContainer")
     return {
-        buyCake: (number) => dispatch(buyCake(number), console.log("dispatch cake"))
+        buyCake: (num) => dispatch(buyCake(num), console.log("dispatch cake"))
         //which dispatches the action creator
     }
 }

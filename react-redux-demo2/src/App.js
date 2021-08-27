@@ -19,14 +19,14 @@ function App() {
         <IceCreamContainer/> */}
 
         {/* Passing Input Param */}
-        {/* <NewCakeContainer/> */}
+        <NewCakeContainer/>
 
         {/* mapStateToProps */}
         {/* <ItemContainer cake/>
         <ItemContainer/> */}
 
         {/* Asychrnous actions */}
-        <UserContainer/>
+        {/* <UserContainer/> */}
       </div>
     </Provider>
     </div>

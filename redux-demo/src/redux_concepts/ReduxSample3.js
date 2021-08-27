@@ -69,7 +69,7 @@ const rootReducer=combineReducers({
 const store = createStore(rootReducer)
 console.log('Initial state',store.getState())
 const unsubscribe=store.subscribe(()=>console.log('Updated state',store.getState()))
-store.dispatch(buyCake())
+store.dispatch(buyCake())//everytime both reducers will call depending on coding will execute particular
 store.dispatch(buyCake())
 store.dispatch(buyCake())
 store.dispatch(buyIceCream())

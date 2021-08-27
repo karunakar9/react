@@ -5,5 +5,6 @@ import logger from 'redux-logger'
 import rootReducer from "./rootReducer"
 
 const store =createStore(rootReducer,composeWithDevTools(applyMiddleware(logger,thunk)))
+// thunk we will be using it for async actions
 
 export default store
