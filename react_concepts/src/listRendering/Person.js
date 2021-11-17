@@ -1,5 +1,6 @@
 import React from 'react'
 
+// function receiving a person object here
 function Person({person}) {
     console.log(person)
     return (

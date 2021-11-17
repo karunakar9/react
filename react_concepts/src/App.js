@@ -169,12 +169,12 @@ function App() {
       {/* <Candidate name={(isLoggedIn)=>isLoggedIn?'karu:4':'Guest'}/> */}
       {/* Method:5 */}
       {/* <Candidate render={(isLoggedIn)=>isLoggedIn?'karu:5':'Guest:5'}/> */}
-      <EventCounter render={(countFromEventCounter,incrementCountFromEventCounter)=>(
+      {/* <EventCounter render={(countFromEventCounter,incrementCountFromEventCounter)=>(
         <ClickCounter counter={countFromEventCounter} incrementCounter={incrementCountFromEventCounter}/>
       )}/>
       <EventCounter render={(countFromEventCounter,incrementCountFromEventCounter)=>(
         <HoverCounter counter={countFromEventCounter} incrementCounter={incrementCountFromEventCounter}/>
-      )}/>
+      )}/> */}
       {/* END : Render Props */}
 
        {/* START : Context */}

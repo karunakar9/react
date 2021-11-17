@@ -6,9 +6,9 @@ import StateCounterWithPrevious from './state/StateCounterWithPrevious'
 function App() {
   return (
     <div className="App">
-      {/* {'State' si mutable we can change content} */}
+      {/* {'State' is mutable we can change content} */}
       {/* We use  this keyword */}
-      {/* In Class private variable 'state' maintianed in withing component */}
+      {/* In Class private variable 'state' maintianed within the component */}
       <StateInClass />
       {/* Counter example */}
       <StateWithCounter/>
