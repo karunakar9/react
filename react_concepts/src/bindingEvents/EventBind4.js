@@ -17,7 +17,9 @@ class EventBind4 extends Component {
         return (
             <div>
                 <div>{this.state.message}</div>
+                {/* Any thing from the below two button elements will work as because using  arrow function */}
                 <button onClick={() => this.ClickHandler()}>Click Here</button>
+                {/* <button onClick={this.ClickHandler}>Click Here</button> */}
             </div>
         )
     }
