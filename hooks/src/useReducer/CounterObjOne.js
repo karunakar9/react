@@ -35,7 +35,7 @@ function CounterObjOne() {
             <button onClick={() => dispatch({ type: 'reset', value: 1 })}>Reset</button>
 
             <br/>
-            firstCounter - {count.secondCounter}<br />
+            secondCounter - {count.secondCounter}<br />
             <button onClick={() => dispatch({ type: 'increment2', value: 1 })}>Increment</button>
             <button onClick={() => dispatch({ type: 'decrement2', value: 1 })}>Decrement</button>
             <button onClick={() => dispatch({ type: 'increment2', value: 5 })}>Increment 5</button>
